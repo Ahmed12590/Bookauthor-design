@@ -1,0 +1,381 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html,
+body {
+    scroll-behavior: smooth;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #A88BEB;
+    padding: 15px 80px;
+}
+
+
+.logo img {
+    height: 60px;
+    width: auto;
+}
+
+.menu ul {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+    font-size: 20px;
+    font-weight: 500;
+
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.menu ul li a:hover {
+    color: rgb(255, 255, 255);
+}
+
+
+.main-section {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+}
+
+
+.image-sec img {
+    height: 600px;
+    transition: all 0.4s ease;
+}
+
+.image-sec img:hover {
+    transform: translateY(-10px);
+    cursor: pointer;
+}
+
+
+.content-sec {
+    align-content: center;
+}
+
+.first-text {
+    font-size: 60px;
+    text-transform: uppercase;
+
+}
+
+
+.first-para {
+    font-size: 18px;
+    line-height: 1.8;
+    padding: 10px 0 20px 0
+}
+
+.first-button {
+    background-color: #A88BEB;
+    color: white;
+    border: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 17px;
+    border-radius: 4px;
+}
+
+.first-button:hover {
+    background-color: black;
+    color: white;
+
+}
+
+
+.second-wrapper {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.content-head h2 {
+    font-size: 50px;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.content-head p {
+    font-size: 18px;
+    line-height: 1.5;
+    padding-bottom: 20px;
+}
+
+.second-img img {
+    height: 400px;
+    transition: all 0.4s ease;
+}
+.second-img img:hover {
+    transform: translateY(-10px);
+    cursor: pointer;
+}
+
+.brand-sec {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 100px 0 100px 0;
+}
+
+.discount-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0;
+}
+
+
+.discount-text {
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+
+.discount-text h2 {
+    font-size: 60px;
+    padding: 0 0 20px 0;
+    text-transform: uppercase;
+}
+
+.discount-text p {
+    font-size: 18px;
+    padding: 0 0 20px 0;
+}
+
+.card-sec {
+    width: 1200px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.card-image img {
+    height: 500px;
+    background-color: antiquewhite;
+    padding: 20px 20px 20px 20px;
+    transition: all 0.4s ease;
+}
+
+.card-sec img:hover {
+    transform: translateY(-10px);
+    cursor: pointer;
+}
+
+.main-footer {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 100px 60px 100px 60px;
+    background-color: #A88BEB;
+
+}
+
+.footer-about h4 {
+    font-size: 30px;
+}
+
+.footer-about p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.footer-social {
+    gap: 50px;
+}
+
+.footer-social h4 {
+    font-size: 30px;
+}
+
+.footer-social i {
+    font-size: 24px;
+    color: white;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.footer-social i:hover {
+    color: black;
+}
+
+.footer-contact h4 {
+    font-size: 30px;
+}
+
+.footer-contact p {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.footer-contact i {
+    font-size: 20px;
+    color: white;
+}
+
+.footer-bottom {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    color: rgb(0, 0, 0);
+}
+
+.footer-bottom img {
+    height: 50px;
+    width: auto;
+}
+
+.footer-bottom p {
+    font-size: 16px;
+}
+
+.footer-bottom p a {
+    text-decoration: none;
+    color: #A88BEB;
+}
+
+
+
+/* ================================
+   📱 Mobile Responsive Styles
+   ================================ */
+@media (max-width: 768px) {
+
+    /* Common container width fix */
+    .main-section,
+    .second-wrapper,
+    .brand-sec,
+    .card-sec {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+    }
+
+    /* Header adjustments */
+    .header {
+        flex-direction: column;
+        padding: 15px 20px;
+    }
+
+    .menu ul {
+        flex-direction: column;
+        gap: 15px;
+        padding-top: 10px;
+    }
+
+    .menu ul li {
+        font-size: 18px;
+    }
+
+    /* Hero section (image + text) */
+    .main-section {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .image-sec img {
+        height: auto;
+        width: 90%;
+    }
+
+    .first-text {
+        font-size: 36px;
+    }
+
+    .first-para {
+        font-size: 14px;
+    }
+
+    .first-button {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+
+    /* Brand logos */
+    .brand-sec {
+        gap: 15px;
+        justify-content: center;
+    }
+
+    .brand-sec img {
+        width: 100px;
+        height: auto;
+    }
+
+    /* Discount section */
+    .discount-section {
+        padding: 30px 10px;
+    }
+
+    .discount-text h2 {
+        font-size: 28px;
+    }
+
+    .discount-text p {
+        font-size: 14px;
+    }
+
+    /* Cards section */
+    .card-sec {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .card-image img {
+        width: 90%;
+        height: auto;
+    }
+
+    /* Footer adjustments */
+    .main-footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+        padding: 30px 20px;
+    }
+
+    .footer-contact p {
+        justify-content: center;
+    }
+
+    .footer-social {
+
+        justify-content: center;
+        gap: 20px;
+    }
+}
