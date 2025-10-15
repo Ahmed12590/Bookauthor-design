@@ -16,6 +16,7 @@ body {
     align-items: center;
     background-color: #A88BEB;
     padding: 15px 80px;
+    position: relative;
 }
 
 .logo img {
@@ -37,7 +38,15 @@ body {
 }
 
 .menu ul li a:hover {
-    color: rgb(255, 255, 255);
+    color: white;
+}
+
+/* ✅ Toggle button style */
+.menu-toggle {
+    display: none;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
 }
 
 .main-section {
@@ -263,7 +272,7 @@ body {
    ================================ */
 @media (max-width: 768px) {
 
-    /* Common container width fix */
+
     .main-section,
     .second-wrapper,
     .brand-sec,
@@ -275,21 +284,37 @@ body {
         padding: 20px;
     }
 
-    /* Header adjustments */
+
     .header {
-        flex-direction: column;
+
         padding: 15px 20px;
+    }
+
+    .menu {
+        display: none;
+        position: absolute;
+        top: 80px;
+        right: 0;
+        background-color: #A88BEB;
+        width: 100%;
+        text-align: center;
+        padding: 20px 0;
+    }
+
+    .menu.active {
+        display: block;
     }
 
     .menu ul {
         flex-direction: column;
-        gap: 15px;
-        padding-top: 10px;
+        gap: 20px;
     }
 
-    .menu ul li {
-        font-size: 18px;
+    .menu-toggle {
+        display: block;
     }
+
+
 
     /* Hero section (image + text) */
     .main-section {
