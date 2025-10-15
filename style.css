@@ -116,6 +116,7 @@ body {
     height: 400px;
     transition: all 0.4s ease;
 }
+
 .second-img img:hover {
     transform: translateY(-10px);
     cursor: pointer;
@@ -312,6 +313,11 @@ body {
     .first-button {
         font-size: 16px;
         padding: 10px 20px;
+    }
+
+    .second-img img {
+        height: 346px;
+
     }
 
     /* Brand logos */
