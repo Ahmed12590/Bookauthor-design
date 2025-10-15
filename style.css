@@ -18,7 +18,6 @@ body {
     padding: 15px 80px;
 }
 
-
 .logo img {
     height: 60px;
     width: auto;
@@ -30,7 +29,6 @@ body {
     gap: 40px;
     font-size: 20px;
     font-weight: 500;
-
 }
 
 .menu ul li a {
@@ -42,7 +40,6 @@ body {
     color: rgb(255, 255, 255);
 }
 
-
 .main-section {
     width: 1200px;
     margin: 0 auto;
@@ -51,7 +48,6 @@ body {
     justify-content: space-between;
     padding: 50px;
 }
-
 
 .image-sec img {
     height: 600px;
@@ -63,7 +59,6 @@ body {
     cursor: pointer;
 }
 
-
 .content-sec {
     align-content: center;
 }
@@ -71,9 +66,7 @@ body {
 .first-text {
     font-size: 60px;
     text-transform: uppercase;
-
 }
-
 
 .first-para {
     font-size: 18px;
@@ -98,7 +91,6 @@ body {
     color: white;
 
 }
-
 
 .second-wrapper {
     width: 1200px;
@@ -148,12 +140,10 @@ body {
     padding: 50px 0;
 }
 
-
 .discount-text {
     text-align: center;
     padding-bottom: 30px;
 }
-
 
 .discount-text h2 {
     font-size: 60px;
@@ -191,7 +181,6 @@ body {
     margin: 0 auto;
     padding: 100px 60px 100px 60px;
     background-color: #A88BEB;
-
 }
 
 .footer-about h4 {
