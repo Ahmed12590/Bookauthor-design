@@ -87,19 +87,31 @@ body {
     background-color: #A88BEB;
     color: white;
     border: none;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding: 10px 30px;
     font-size: 17px;
     border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
+
 
 .first-button:hover {
     background-color: black;
     color: white;
-
+    transform: translateY(-5px); 
 }
+.first-button.float {
+    animation: float 2s ease-in-out infinite;
+}
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-8px);
+    }
+}
+
 
 .second-wrapper {
     width: 1200px;
@@ -201,23 +213,21 @@ body {
     font-size: 16px;
     line-height: 1.5;
 }
+
 .quick-links h4 {
     font-size: 30px;
     padding-bottom: 10px;
-} 
+}
 
 .footer-quick-link li {
     list-style: none;
-    font-size: 20px; 
-    
+    font-size: 20px;
 }
+
 .footer-quick-link li:hover {
     color: white;
-    cursor:pointer; 
-    
+    cursor: pointer;
 }
-
-
 
 .footer-social {
     display: flex;
