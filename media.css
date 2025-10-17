@@ -1,0 +1,139 @@
+
+/* ================================
+   📱 Mobile Responsive Styles
+   ================================ */
+@media (max-width: 768px) {
+
+
+    .main-section,
+    .second-wrapper,
+    .brand-sec,
+    .card-sec {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+    }
+
+
+    .header {
+
+        padding: 15px 20px;
+    }
+
+    .menu {
+        display: none;
+        position: absolute;
+        top: 80px;
+        right: 0;
+        background-color: #A88BEB;
+        width: 100%;
+        text-align: center;
+        padding: 20px 0;
+    }
+
+    .menu.active {
+        display: block;
+    }
+
+    .menu ul {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+
+
+    /* Hero section (image + text) */
+    .main-section {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .image-sec img {
+        height: auto;
+        width: 90%;
+    }
+
+    .first-text {
+        font-size: 36px;
+    }
+
+    .first-para {
+        font-size: 14px;
+    }
+
+    .first-button {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+
+    .second-img img {
+        height: 346px;
+
+    }
+
+    .brand-sec {
+        gap: 15px;
+        justify-content: center;
+    }
+
+    .brand-sec img {
+        width: 100px;
+        height: auto;
+    }
+
+    .discount-section {
+        padding: 30px 10px;
+    }
+
+    .discount-text h2 {
+        font-size: 28px;
+    }
+
+    .discount-text p {
+        font-size: 14px;
+    }
+
+    .card-sec {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .card-image img {
+        width: 90%;
+        height: auto;
+    }
+
+
+    .about-first-wrapper {
+    display: block;
+}
+
+
+
+
+
+    .main-footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+        padding: 30px 20px;
+    }
+
+    .footer-contact p {
+        justify-content: center;
+    }
+
+    .footer-social {
+
+        justify-content: center;
+        gap: 20px;
+    }
+}
+

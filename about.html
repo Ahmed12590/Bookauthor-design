@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Author</title>
+    <title>About</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="media.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
@@ -13,9 +13,7 @@
 </head>
 
 <body>
-
     <header class="main-header">
-
         <nav class="header">
             <div class="logo">
                 <img src="images/logo-1.png" alt="">
@@ -37,24 +35,27 @@
     </header>
 
 
+    <section class="about-banner">
+        <h1>About Banner</h1>
+    </section>
 
-    <section class="main-section">
-        <div class="image-sec">
-            <img src="images/animal-book-3.png" alt="">
-        </div>
+    <section class="about-first-wrapper">
 
-        <div class="content-sec">
-            <h1 class="first-text">Good author &<br> wonderful plot in</h1>
-            <p class="first-para">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod <br>
-                tempor incididunt ut labore etdolore magna aliqua. Ut enim ad minim veniam, <br>
-                quis nostrud exercitation ullamco.
+        <div class="about-us-text">
+            <h2> About us </h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, molestias suscipit <br>
+                praesentium eaque doloremque totam cumque obcaecati corporis deleniti <br>maxime?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, <br>
+                molestias suscipit praesentium eaque doloremque totam cumque obcaecati <br> corporis deleniti maxime?
             </p>
             <button class="first-button">Read More</button>
         </div>
-
+        <div class="about-img">
+            <img src="images/animal-book-3.png" alt="">
+        </div>
     </section>
-<section class="banner-back">
+
+    <section class="banner-back">
         <div class="about-img-banner">
             <h5> A powerful explantion of design</h5>
             <h2>Don’t miss event of Grand <br>Central Publishing.</h2>
@@ -65,56 +66,9 @@
         </div>
     </section>
 
-    <section class="second-wrapper">
-        <div class="content-head">
-            <h2>The Moon Network-<br> Julien Ern</h2>
-            <P>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do <br> eiusmod tempor incididunt ut labore
-                et dolore magna aliqua. Ut <br>enim ad minim veniam, quis nostrud exercitation ullamco laboris <br> nisi
-                ut
-                aliquip
-                ex ea commodo consequat. </P>
-            <button class="first-button">Read More</button>
-        </div>
-        <div class="second-img">
-            <img src="images/animal-book-2-1.png" alt="">
-        </div>
-    </section>
-
-    <section class="brand-sec">
-        <div class="brand-logo">
-            <img src="images/logo-1.png" alt="">
-        </div>  
-        <div class="brand-logo">
-            <img src="images/logo-1.png" alt="">
-        </div>
-        <div class="brand-logo">
-            <img src="images/logo-1.png" alt="">
-        </div>
-        <div class="brand-logo">
-            <img src="images/logo-1.png" alt="">
-        </div>
-    </section>
 
 
 
-    <section class="discount-section">
-        <div class="discount-text">
-            <h2>Discount for Novel</h2>
-            <p>Insisted out differed ham man endeavor expenses.</p>
-        </div>
-
-        <div class="card-sec">
-            <div class="card-image">
-                <img src="images/cardimage.jpg" alt="">
-            </div>
-            <div class="card-image">
-                <img src="images/cardimage.jpg" alt="">
-            </div>
-            <div class="card-image">
-                <img src="images/cardimage.jpg" alt="">
-            </div>
-        </div>
-    </section>
 
 
 
@@ -145,6 +99,8 @@
         </div>
 
 
+
+
         <div class="footer-contact">
             <h4>Contact Us</h4>
             <p><i class="fa-solid fa-envelope"></i> email@gmail.com</p>
@@ -156,7 +112,6 @@
         <p>Developed by <a href="https://theahmedportfolio.vercel.app/">Ahmed</a> </p>
         <p>Copyright <span id="year"></span></p>
     </div>
-
     <script>
         const toggle = document.getElementById('menu-toggle');
         const menu = document.getElementById('menu');
@@ -170,8 +125,6 @@
         const year = new Date().getFullYear();
         document.getElementById("year").textContent = year;
     </script>
-
-
 </body>
 
 </html>
