@@ -349,24 +349,27 @@ body {
 
 .banner-back {
   background-color: #A88BEB;
-  height: 300px;
+  height: 400px;
   display: flex;
   flex-direction: column;
   justify-content: center;  
   align-items: center;      
   text-align: center;      
   margin-bottom: 50px;
+  
 }
 
 .about-img-banner h5 {
   margin: 0;
   font-size: 20px;
   font-weight: 400;
+  
 }
 
 .about-img-banner h2 {
   margin: 10px 0;
-  font-size: 50px;  
+  font-size: 50px;
+ text-transform: uppercase;
 }
 
 .banner-button {
