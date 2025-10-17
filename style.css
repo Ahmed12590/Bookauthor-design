@@ -348,40 +348,86 @@ body {
 
 
 .banner-back {
-  background-color: #A88BEB;
-  height: 400px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;  
-  align-items: center;      
-  text-align: center;      
-  margin-bottom: 50px;
-  
+    background-color: #A88BEB;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 50px;
+
 }
 
 .about-img-banner h5 {
-  margin: 0;
-  font-size: 20px;
-  font-weight: 400;
-  
+    margin: 0;
+    font-size: 20px;
+    font-weight: 400;
+
 }
 
 .about-img-banner h2 {
-  margin: 10px 0;
-  font-size: 50px;
- text-transform: uppercase;
+    margin: 10px 0;
+    font-size: 50px;
+    text-transform: uppercase;
 }
 
 .banner-button {
-  margin-top: 15px;
+    margin-top: 15px;
 }
 
 .banner-button .first-button {
-  padding: 10px 20px;
-  margin: 0 5px;
-  border: none;
-  background-color: black;
-  color: white;
-  cursor: pointer;
-  border-radius: 5px;
+    padding: 10px 20px;
+    margin: 0 5px;
+    border: none;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+
+
+/* ///////// contact page /////////// */
+
+
+.contact-form {
+    background-color: #ffffff;
+    padding: 50px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form input {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+.form button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.form button:hover {
+    background-color: #555;
 }
