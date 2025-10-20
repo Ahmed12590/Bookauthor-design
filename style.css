@@ -515,14 +515,68 @@ body {
     gap: 20px;
 }
 
+
 .testimonail-card {
+    position: relative;
     background-color: #f8f8f8;
     padding: 40px;
     border-radius: 10px;
     width: 30%;
     min-width: 280px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    z-index: 0;
+    overflow: hidden;
+
+    transition: all 0.3s ease;
+
 }
+
+/* 🔹 Create gradient border layer */
+.testimonail-card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 12px;
+    padding: 2px;
+    background: linear-gradient(45deg,
+            #feda75,
+            #fa7e1e,
+            #d62976,
+            #962fbf,
+            #4f5bd5);
+    background-size: 300%;
+    mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    mask-composite: exclude;
+    -webkit-mask-composite: destination-out;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    z-index: -1;
+}
+
+/* 🔹 Hover: show animated border */
+.testimonail-card:hover::before {
+    opacity: 1;
+    animation: instaBorder 3s linear infinite;
+}
+
+/* 🔹 Animate gradient movement */
+@keyframes instaBorder {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+
 
 .testimonail-card h6 {
     font-size: 20px;
