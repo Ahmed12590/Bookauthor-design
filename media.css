@@ -124,10 +124,22 @@
 
     .about-img-banner h2 {
         margin: 10px 0;
-        font-size: 30px;
+        font-size: 26px;
         text-transform: uppercase;
     }
 
+
+
+    /* ////   book page //// */
+
+
+    .book-first-wrapper h1 {
+        font-size: 36px;
+    }
+
+    .book-first-wrapper p {
+        font-size: 16px;
+    }
 
 
     .main-footer {
@@ -147,4 +159,4 @@
         justify-content: center;
         gap: 20px;
     }
-} 
+}

@@ -463,25 +463,75 @@ body {
 
 
 .book-wrapper {
-    width: 1200px;
+    width: 100%;
+    max-width: 1200px;
     margin: 0 auto;
     align-items: center;
-    padding: 60px 0 60px 0;
+    padding: 60px 20px;
+    box-sizing: border-box;
 }
 
 
 .book-first-wrapper h1 {
     font-size: 60px;
-    padding: 0 0 20px 0;
-
+    padding-bottom: 20px;
+    text-align: center;
 }
 
 
 .book-first-wrapper p {
     font-size: 18px;
     line-height: 1.8;
+    color: #333;
 }
 
-.book-image-sec img {
-    height: 500px;
+
+
+.testimonail-sec {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.testimonial-wrapper h1 {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.testimonial-wrapper p {
+    color: #555;
+    font-size: 18px;
+    max-width: 700px;
+    margin: 0 auto 40px;
+}
+
+
+.testimonail-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.testimonail-card {
+    background-color: #f8f8f8;
+    padding: 40px;
+    border-radius: 10px;
+    width: 30%;
+    min-width: 280px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.testimonail-card h6 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.testimonail-card p {
+    color: #555;
+    font-size: 16px;
+    line-height: 1.5;
 }
