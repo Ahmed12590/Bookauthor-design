@@ -10,6 +10,22 @@ body {
     scroll-behavior: smooth;
 }
 
+.cursor {
+  width: 20px;
+  height: 20px;
+  background: #A88BEB;
+  border-radius: 50%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  mix-blend-mode: difference;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+}
+
+
+
 .header {
     display: flex;
     justify-content: space-between;
@@ -440,4 +456,33 @@ body {
 
 .form button:hover {
     background-color: #555;
+}
+
+
+/* ////////// Book page css ///////// */
+
+
+.book-wrapper {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.book-first-wrapper h1 {
+    font-size: 60px;
+    padding: 0 0 20px 0;
+
+}
+
+
+.book-first-wrapper p {
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.book-image-sec img {
+    height: 500px;
 }
